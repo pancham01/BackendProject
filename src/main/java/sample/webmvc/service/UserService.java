@@ -24,4 +24,10 @@ public class UserService {
 		userDao.saveUser(user);
 	}
 
+
+	public User getUserById(int id) {
+		System.out.println("UserService.getUserById()");
+		return userDao.getUserById(id);
+	}
+
 }
